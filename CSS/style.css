@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --red: #E30613;
+    --black: #111111;
+    --bg: #F8F9FA;
+    --card-bg: #FFFFFF;
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--black);
+    font-family: 'Open Sans', system-ui, sans-serif;
+    line-height: 1.6;
+}
+
+.montserrat {
+     font-family: 'Montserrat', sans-serif;
+}
+
+.cinzel {
+    font-family: 'Cinzel', serif; 
+}
+
+.header {
+    background: linear-gradient(135deg, var(--red), #b3000d);
+    color: #FFF;
+    text-align: center;
+    padding: 3rem 1rem;
+    border-bottom: 5px solid var(--black);
+}
+
+.main-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: clamp(1.8rem, 5vw, 2.5rem);
+    letter-spacing: 2px;
+}
+
+.subtitle { opacity: 0.9; margin-top: 0.4rem; }
+
+.footer {
+    text-align: center;
+    padding: 2rem 1rem;
+    font-size: 0.85rem;
+    color: #666;
+}
+
+.container {
+    max-width: 800px;
+    margin: -1.5rem auto 2rem;
+    padding: 0 1rem;
+    display: grid;
+    gap: 1.5rem;
+}
+
+.card {
+    background: var(--card-bg);
+    padding: 1.8rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+    border-left: 5px solid transparent;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.08);
+}
+
+.red-border   {
+    border-left-color: var(--red); 
+}
+.black-border { 
+    border-left-color: var(--black); 
+}
+
+.badge {
+    display: inline-block;
+    background: var(--black);
+    color: #FFF;
+    font-size: 0.7rem;
+    font-weight: 700;
+    padding: 0.25rem 0.6rem;
+    border-radius: 4px;
+    margin-bottom: 0.8rem;
+    text-transform: uppercase;
+}
+
+.text-red    { color: var(--red); }
+.bold        { font-weight: 700; }
+.heavy       { font-weight: 900; text-transform: uppercase; }
+.italic      { font-style: italic; }
+.title-lg    { font-size: 1.75rem; margin-bottom: 0.4rem; }
+.body-md     { font-size: 1rem; margin-bottom: 0.8rem; }
